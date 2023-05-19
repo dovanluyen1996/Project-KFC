@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+ 
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+p{
+    padding: 0;  //vì sao cài ở trên * rồi mà đến đây lại phải cài lại
+    margin: 0;
+}
+.header1{
+    height: 102.8px;
+    background-color: #ffff;
+    &-gap1{
+        gap: 40px;
+    }
+    &-gap2{
+        gap: 32px;
+    }
+    &-img{
+        max-width: 78px;
+        max-height: 78px;
+        }
+    &-right{
+        width: 30px;
+        height: 30px;
+    }
+    &-menuRight{
+        background-color: red;
+        width: 185px;
+        height: 45px;
+        
+    }
+}
+.thu{
+    height: 1400px;
+    background-color: aquamarine;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header2{
+    height: 66px;
+    background-color: rgb(53, 49, 49);
+    color: #ffff;
+    &-icon{
+        width: 30px;
+        height: 30px;
+    }
+}
+.an{
+    display: none;
+}
