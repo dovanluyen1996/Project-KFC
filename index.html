@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KFC</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="./KFC.css">
+    
 </head><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./KFC.css">
 <body>
     <div class="wrapper">
         <main>
@@ -35,9 +36,9 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="header1 d-flex justify-content-between header1-gap2">
+                            <div class="header1 d-flex justify-content-between header1-gap2 ">
                                 <div class=" header1  center gap-3">
-                                    <div class="rounded-pill header1-menuRight center hide" id="oder">
+                                    <div class="rounded-pill header1-menuRight center hide " id="oder">
                                         <a href="https://kfcvietnam.com.vn/store-selection">Bắt đầu đặt món</a>
                                     </div>
                                     <a class="" href="">Tiếng việt</a>
@@ -49,9 +50,10 @@
                                     <a class="" href="https://kfcvietnam.com.vn/cart">
                                         <img class="header1-right" src="./image/iicon-giohang.jpg" alt="">
                                     </a>
+                                    <!-- /// -->
                                     <div >
                                         <button class="border-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img class="header1-right" src="./image/icon-menu.png" alt=""></button>
-                                        <div class="offcanvas offcanvas-end" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                        <div class="offcanvas offcanvas-end p-0" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                             <div class="offcanvas-header">
                                                 <div class="headerCanvas center"><h5 class="center m-0" id="offcanvasRightLabel">KFC</h5>
                                                 </div>
@@ -59,7 +61,16 @@
                                                 <button class="btn-close text-reset" tabindex="-1" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                             </div>
                                             <div class="offcanvas-body">
-                                            ...
+                                            <ul class=" p-0">
+                                                <li><h5>Danh mục món ăn</h5></li>
+                                                <li><a class="canvas-list" href="https://kfcvietnam.com.vn/menu/new-product">Món mới</a></li>
+                                                <li><a class="canvas-list" href="https://kfcvietnam.com.vn/menu/for-one">Combo một người</a></li>
+                                                <li><a class="canvas-list" href="https://kfcvietnam.com.vn/menu/sharing">Combo nhóm</a></li>
+                                                <li><a class="canvas-list" href="https://kfcvietnam.com.vn/menu/fried-rosted-chicken">Gà rán-Gà quay</a></li>
+                                                <li><a class="canvas-list" href="https://kfcvietnam.com.vn/menu/burger---rice">Burger-Mỳ ý-Cơm</a></li>
+                                                <li><a class="canvas-list" href="https://kfcvietnam.com.vn/menu/snack">Thức ăn nhẹ</a></li>
+                                                <li><a class="canvas-list" href="">Thức uống và tráng miệng</a></li>
+                                            </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -71,8 +82,8 @@
             <!-- headre2 -->
             <div class=" container-fluid header2 center">
                 <div class="container center gap-3">
-                    <div>
-                        <p>Đặt ngay</p>
+                    <div >
+                        <p >Đặt ngay</p>
                     </div>
                     <div class="center gap-1">
                         <div><img class="header2-icon" src="./image/icon-shipper.png" alt=""></div>
@@ -107,23 +118,135 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
-            <!-- the and slie -->
+            <!-- the end slie -->
 
-            <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
+            <div class="container mt-3 p-0 d-flex ">
+                <h3>Danh mục món ăn</h3>
+                <!-- cái dòng kẻ hr chưa làm được -->
+            </div>
+            
+            <div class="container p-0 foodlist">
+                <a class="card foodlist-card" href="https://kfcvietnam.com.vn/menu/new-product">
+                    <div class="card-img">
+                        <img class="card-img-top foodlist-card-img" src="./image/MON MOI.jpg"  alt="...">
+                    </div>
+                    <div class="card-body">
+                    <p class="card-text">Món mới</p>
+                    </div>
+                </a>
+                <a class="card foodlist-card" href="https://kfcvietnam.com.vn/menu/for-one">
+                    <div class="card-img">
+                        <img class="card-img-top foodlist-card-img" src="./image/COMBO 1 NGUOI.jpg"  alt="...">
+                    </div>
+                    <div class="card-body">
+                    <p class="card-text">Combo một người</p>
+                    </div>
+                </a>
+                <a class="card foodlist-card" href="https://kfcvietnam.com.vn/menu/sharing">
+                    <div class="card-img">
+                        <img class="card-img-top foodlist-card-img" src="./image/COMBO 1 NGUOI.jpg"  alt="...">
+                    </div>
+                    <div class="card-body">
+                    <p class="card-text">Combo nhóm</p>
+                    </div>
+                </a>
+                <a class="card foodlist-card" href="https://kfcvietnam.com.vn/menu/fried-rosted-chicken">
+                    <div class="card-img">
+                        <img class="card-img-top foodlist-card-img" src="./image/COMBO 1 NGUOI.jpg"  alt="...">
+                    </div>
+                    <div class="card-body">
+                    <p class="card-text">Gà rán-Gà quay</p>
+                    </div>
+                </a>
+                <a class="card foodlist-card" href="https://kfcvietnam.com.vn/menu/burger---rice">
+                    <div class="card-img">
+                        <img class="card-img-top foodlist-card-img" src="./image/COMBO 1 NGUOI.jpg"  alt="...">
+                    </div>
+                    <div class="card-body">
+                    <p class="card-text">Burger-Mỳ ý-Cơm</p>
+                    </div>
+                </a>
+                <a class="card foodlist-card" href="https://kfcvietnam.com.vn/menu/snack">
+                    <div class="card-img">
+                        <img class="card-img-top foodlist-card-img" src="./image/COMBO 1 NGUOI.jpg"  alt="...">
+                    </div>
+                    <div class="card-body">
+                    <p class="card-text">Thức ăn nhẹ</p>
+                    </div>
+                </a>
+                <a class="card foodlist-card" href="https://kfcvietnam.com.vn/menu/dessert-&-drink">
+                    <div class="card-img">
+                        <img class="card-img-top foodlist-card-img" src="./image/COMBO 1 NGUOI.jpg"  alt="...">
+                    </div>
+                    <div class="card-body">
+                    <p class="card-text">Thức uống và tráng miệng</p>
+                    </div>
+                </a>
+            </div> 
 
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-              <div class="offcanvas-header">
-                <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                ...
-              </div>
-            </div> -->
+            <!-- --------- -->
+            <div class="container mt-3 p-0 d-flex ">
+                <h3>Có thể bạn sẽ thích món này</h3>
+                <!-- <hr style="margin: 0; border: none; border-top: 10px solid black; width: 100%;"> -->
+            </div>
 
+            <div class="container p-0 suggestList" id="ListSuggest">
+                <div class="p-1 suggest" >
+                    <div class="suggest-img" >
+                        <img class="foodlist-card-img" src="./image/suggest.jpg"  alt="...">
+                    </div>
+                    <div class="container suggest-text pt-3 pb-3">
+                        <div class="d-flex justify-content-between">
+                            <h5>Combo nhóm 1</h5>
+                            <h5>175.000đ</h5>
+                        </div>
+                        <div class="suggest-note">
+                             <p class="suggest-note-text">3 Miếng Gà Rán + 1 Burger Tôm + 2 Lon Pepsi.</p>
+                            <a href="" class="suggest-note-btn container center">Thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-1 suggest" >
+                    <div class="suggest-img" >
+                        <img class="foodlist-card-img" src="./image/suggest.jpg"  alt="...">
+                    </div>
+                    <div class="container suggest-text pt-3 pb-3">
+                        <div class="d-flex justify-content-between">
+                            <h5>Combo nhóm 2</h5>
+                            <h5>175.000đ</h5>
+                        </div>
+                        <div class="suggest-note">
+                             <p class="suggest-note-text">4 Miếng Gà Giòn Cay / 4 Miếng Gà Giòn Không Cay / 4 Miếng Gà Truyền thống + 1 Khoai tây chiên lớn / 2 Thanh Bí Phô-mai + 2 Pepsi Lon.</p>
+                            <a href="" class="suggest-note-btn container center">Thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-1 suggest" >
+                    <div class="suggest-img" >
+                        <img class="foodlist-card-img" src="./image/suggest.jpg"  alt="...">
+                    </div>
+                    <div class="container suggest-text pt-3 pb-3">
+                        <div class="d-flex justify-content-between">
+                            <h5>Combo nhóm 3</h5>
+                            <h5>175.000đ</h5>
+                        </div>
+                        <div class="suggest-note">
+                             <p class="suggest-note-text">5 Miếng Gà Giòn Cay / 5 Miếng Gà Giòn Không Cay / 5 Miếng Gà Truyền Thống+ 1 Popcorn (Vừa) / 4 Gà Miếng Nuggets+ 2 Pepsi Lon.</p>
+                            <a href="" class="suggest-note-btn container center">Thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        
             <div class="thu">
 
-            </div>
+        
+              </div>
+              
+              
+
         </main>
 
     </div>

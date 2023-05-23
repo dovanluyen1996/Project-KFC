@@ -5,6 +5,7 @@ function header(){
         const y = window.pageYOffset;// đọc vị trí của trang
     
         const show= document.getElementById("oder");
+        // console.log(show);
         if(y<100){
             show.classList.add(`hide`);
         }

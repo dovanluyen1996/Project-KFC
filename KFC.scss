@@ -1,3 +1,4 @@
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -13,6 +14,9 @@ ul{
 a{
     text-decoration: none;
     color: black;
+    &:hover{
+        color: black;
+    }
 }
 p{
     padding: 0;  //vì sao cài ở trên * rồi mà đến đây lại phải cài lại
@@ -37,15 +41,16 @@ p{
     }
     &-menuRight{
         background-color: red;
-        width: 185px;
+        max-width: 250px;/////////////
         height: 45px;
-        
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
-.thu{
-    height: 1400px;
-    background-color: aquamarine;
+.font{
+    font-size: 10px;
 }
+
 .center{
     display: flex;
     justify-content: center;
@@ -69,3 +74,78 @@ p{
 .headerCanvas{
     width: 100%;
 }
+.canvas{
+    &-list{
+        font-size: 16px;
+        font-weight: 300;
+        &:hover{
+            border-bottom: 3px solid rgb(44, 164, 84);
+        }
+    }
+}
+.foodlist{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    &-card{
+        box-shadow: 0px 0px 10px 0px rgb(159, 153, 153);
+        &-img{
+            transition: transform 0.5s ease;
+            &:hover{
+            transform: scale(1.2);
+        }
+    }
+}
+.card-img{
+    overflow: hidden;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+}
+.suggestList{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.suggest{
+    border-radius: 0;
+    box-shadow: 0px 0px 10px 0px rgb(159, 153, 153);
+    &-img{
+        height: 60%;
+        overflow: hidden;
+        & img{
+            width: 100%;
+        }
+    }
+    &-text{
+        height: 40%;
+    }
+}
+
+.suggest-note{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &-text{
+        font-size: 16px;
+        color: rgb(195, 195, 182);
+        font-weight: 300;
+    }
+    &-btn{
+        padding: 5px;
+        background-color: rgb(226, 218, 218);
+        border-radius: 40px;
+        width: 90%;
+        color: #ffff;
+        &:hover{
+            color: #ffff;
+        }
+    }
+}
+
+.thu{
+    height: 1400px;
+    background-color: aquamarine;
+}
+
