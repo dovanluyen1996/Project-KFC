@@ -3,8 +3,6 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
 }
 
 ul {
@@ -27,6 +25,8 @@ p {
 .header1 {
   height: 102.8px;
   background-color: white;
+  font-size: 20px;
+  font-weight: 500;
 }
 .header1-gap1 {
   gap: 40px;
@@ -42,6 +42,21 @@ p {
   width: 30px;
   height: 30px;
 }
+.header1-cart {
+  width: 30px;
+  height: 30px;
+  background-image: url("./image/icon-giohang.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+.header1-cart-number {
+  position: absolute;
+  top: 1px;
+  left: 10px;
+  color: red;
+  font-size: 14px;
+}
 .header1-menuRight {
   background-color: red;
   max-width: 250px;
@@ -50,32 +65,14 @@ p {
   padding-right: 20px;
 }
 
-.font {
-  font-size: 10px;
-}
-
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.header2 {
-  height: 66px;
-  background-color: rgb(53, 49, 49);
-  color: white;
-}
-.header2-icon {
-  width: 30px;
-  height: 30px;
-}
-
 .hide {
   display: none;
-}
-
-.conten1 {
-  height: 500px;
 }
 
 .headerCanvas {
@@ -90,10 +87,33 @@ p {
   border-bottom: 3px solid rgb(44, 164, 84);
 }
 
+.header2 {
+  height: 66px;
+  background-color: rgb(53, 49, 49);
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+.header2-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.nen {
+  background-color: rgb(53, 49, 49);
+}
+
+.conten1 {
+  height: 65vh;
+}
+
 .foodlist {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
 }
 .foodlist-card {
   box-shadow: 0px 0px 10px 0px rgb(159, 153, 153);
@@ -153,7 +173,166 @@ p {
   color: white;
 }
 
+.footer-top {
+  height: 40vh;
+  background-image: url(./image/footer.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 70%;
+}
+.footer-top:hover {
+  cursor: pointer;
+}
+
+footer {
+  background-color: rgb(34, 33, 33);
+}
+
+.BoxFooter {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+.BoxFooter a {
+  color: rgb(134, 126, 126);
+}
+.BoxFooter a:hover {
+  color: white;
+}
+.BoxFooter-icon {
+  display: flex;
+}
+.BoxFooter-icon-img {
+  width: 130px;
+  height: 40px;
+}
+.BoxFooter-icon-img img {
+  width: 100%;
+}
+
+.footer-icon {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  padding: 0;
+}
+.footer-icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50% 50%;
+}
+
+.move {
+  transition: transform 0.5s ease-in-out;
+}
+.move:hover {
+  transform: rotate(1turn);
+  border: 1px solid white;
+  box-shadow: 0px 0px 10px 0px white;
+}
+
+.hr-footer {
+  margin-top: 30px;
+  height: 3px;
+  background-color: rgb(248, 248, 248);
+  border-style: none;
+}
+
+.footer-text {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(134, 126, 126);
+}
+.footer-text h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.the-end {
+  background-color: white;
+  width: 15px;
+  height: 40px;
+  margin-right: 10px;
+}
+
 .thu {
   height: 1400px;
   background-color: aquamarine;
+}
+
+.them-mon {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(53, 49, 49);
+}
+
+.spinner {
+  margin: 50px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  text-align: center;
+}
+
+.spinner:before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border-width: 3px;
+  border-style: solid;
+  -webkit-animation: spin 1s linear forwards;
+          animation: spin 1s linear forwards;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg) skew(0deg);
+    border-color: #0f0;
+  }
+  25% {
+    transform: rotate(90deg) skew(-45deg);
+    border-color: #0ff;
+  }
+  50% {
+    transform: rotate(180deg) skew(0deg);
+    border-color: #00f;
+  }
+  75% {
+    transform: rotate(270deg) skew(45deg);
+    border-color: #000;
+  }
+  100% {
+    transform: rotate(360deg) skew(0deg);
+    border-color: #000;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg) skew(0deg);
+    border-color: #0f0;
+  }
+  25% {
+    transform: rotate(90deg) skew(-45deg);
+    border-color: #0ff;
+  }
+  50% {
+    transform: rotate(180deg) skew(0deg);
+    border-color: #00f;
+  }
+  75% {
+    transform: rotate(270deg) skew(45deg);
+    border-color: #000;
+  }
+  100% {
+    transform: rotate(360deg) skew(0deg);
+    border-color: #000;
+  }
 }/*# sourceMappingURL=KFC.css.map */
