@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: black;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.header1 {
+  height: 102.8px;
+  background-color: white;
+}
+.header1-gap1 {
+  gap: 40px;
+}
+.header1-gap2 {
+  gap: 32px;
+}
+.header1-img {
+  max-width: 78px;
+  max-height: 78px;
+}
+.header1-right {
+  width: 30px;
+  height: 30px;
+}
+.header1-menuRight {
+  background-color: red;
+  max-width: 250px;
+  height: 45px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.font {
+  font-size: 10px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header2 {
+  height: 66px;
+  background-color: rgb(53, 49, 49);
+  color: white;
+}
+.header2-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.hide {
+  display: none;
+}
+
+.conten1 {
+  height: 500px;
+}
+
+.headerCanvas {
+  width: 100%;
+}
+
+.canvas-list {
+  font-size: 16px;
+  font-weight: 300;
+}
+.canvas-list:hover {
+  border-bottom: 3px solid rgb(44, 164, 84);
+}
+
+.foodlist {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.foodlist-card {
+  box-shadow: 0px 0px 10px 0px rgb(159, 153, 153);
+}
+.foodlist-card-img {
+  transition: transform 0.5s ease;
+}
+.foodlist-card-img:hover {
+  transform: scale(1.2);
+}
+.foodlist .card-img {
+  overflow: hidden;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.suggestList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.suggest {
+  border-radius: 0;
+  box-shadow: 0px 0px 10px 0px rgb(159, 153, 153);
+}
+.suggest-img {
+  height: 60%;
+  overflow: hidden;
+}
+.suggest-img img {
+  width: 100%;
+}
+.suggest-text {
+  height: 40%;
+}
+
+.suggest-note {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.suggest-note-text {
+  font-size: 16px;
+  color: rgb(195, 195, 182);
+  font-weight: 300;
+}
+.suggest-note-btn {
+  padding: 5px;
+  background-color: rgb(226, 218, 218);
+  border-radius: 40px;
+  width: 90%;
+  color: white;
+}
+.suggest-note-btn:hover {
+  color: white;
+}
+
+.thu {
+  height: 1400px;
+  background-color: aquamarine;
+}/*# sourceMappingURL=KFC.css.map */
